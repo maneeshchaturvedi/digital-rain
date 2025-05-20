@@ -4,7 +4,7 @@ import java.util.Random;
 
 public class TerminalDigitalRain {
 
-    // ANSI escape codes for colors and screen handling
+    
     private static final String ANSI_CLEAR = "\u001B[2J";
     private static final String ANSI_HOME = "\u001B[H";
     private static final String ANSI_GREEN = "\u001B[32m";
@@ -16,11 +16,9 @@ public class TerminalDigitalRain {
             '#', '/', '\\', '+', '-', '*', '@', '&', '!', '^'
     };
 
-    // Terminal size – adjust these to match your preferred width/height
     private static final int WIDTH = 80; // columns
     private static final int HEIGHT = 25; // rows
 
-    // Probability of a "space" instead of a character for each position
     private static final double SPACE_PROBABILITY = 0.02;
 
     public static void main(String[] args) throws InterruptedException {
